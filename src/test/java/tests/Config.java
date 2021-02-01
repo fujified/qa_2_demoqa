@@ -12,6 +12,7 @@ public class Config {
     String lastname = "spock";
     String email = "mrspock@mac.com";
     String mobile = "8125705666";
+    String subjects = "Hindi";
     String address = "nevsky";
     String state = "Rajasthan";
     String city = "Jaipur";
