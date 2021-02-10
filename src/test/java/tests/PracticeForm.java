@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class PracticeForm extends Config {
+public class PracticeForm extends TestBase {
 
     @Test
     void dataInPracticeForm() {
@@ -35,8 +35,8 @@ public class PracticeForm extends Config {
         $("#react-select-4-input").setValue(city).pressEnter();
         $("#submit").click();
 
-        $(".table-responsive").shouldHave(text(firstname), text(lastname), text(email), text(mobile),
-                text("Male"), text(mobile), text("13 May,1985"), text("Hindi"), text("Sports, Reading"),
+        $(".table-responsive").shouldHave(text(firstname), text(lastname), text(email), text("Male"),
+                text(mobile), text("13 May,1985"), text("Hindi"), text("Sports, Reading"),
                 text("spock.jpg"), text(address), text(state), text(city));
         $("#closeLargeModal").click();
     }
