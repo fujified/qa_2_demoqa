@@ -19,6 +19,7 @@ public class TestBase {
     String lastname = faker.name().lastName();
     String email = faker.internet().emailAddress("helloworld");
     String mobile = 7812 + randomNumber;
+//    String mobile = faker.phoneNumber().subscriberNumber(10);
     String subjects = "Hindi";
     String address = faker.address().fullAddress();
     String state = "Rajasthan";
